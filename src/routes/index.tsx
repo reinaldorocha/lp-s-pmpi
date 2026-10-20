@@ -5,6 +5,7 @@ import { Check, ChevronRight, Lock, MessageCircle, ShieldCheck } from "lucide-re
 import dep1 from "@/assets/depoimento-1.webp";
 import dep2 from "@/assets/depoimento-2.webp";
 import dep3 from "@/assets/depoimento-3.webp";
+import antesDepois from "@/assets/antesdepois.webp";
 import mockup from "@/assets/mockup-simulados.jpg";
 import { Button } from "@/components/ui/button";
 import {
@@ -321,6 +322,44 @@ function Index() {
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b.d}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* QUEM SOU EU */}
+      <section className="border-t border-border/50 py-16 sm:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 lg:grid-cols-2 lg:gap-16">
+          <div className="order-2 lg:order-1">
+            <SectionLabel>Quem sou eu</SectionLabel>
+            <h2 className="mt-4 text-3xl font-black leading-tight tracking-tight sm:text-4xl">
+              Eu também já estive no <span className="text-primary">começo da jornada.</span>
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+              <p>
+                Antes de vestir a farda, eu sabia como é olhar para um objetivo grande e não ter um
+                caminho claro para chegar lá. Foi com disciplina, constância e estudo estratégico que
+                transformei esse sonho em realidade.
+              </p>
+              <p>
+                Hoje, como policial e professor, criei estes simulados para encurtar o seu
+                caminho: com treino no padrão da banca, correções que ensinam e foco no que realmente
+                importa para a PMPI.
+              </p>
+              <p className="font-bold text-foreground">
+                Se eu consegui sair do ponto em que estava, você também pode conquistar o seu lugar.
+              </p>
+            </div>
+            <div className="mt-8">
+              <Cta>Quero começar minha preparação</Cta>
+            </div>
+          </div>
+          <div className="order-1 lg:order-2">
+            <img
+              src={antesDepois}
+              alt="Antes e depois do Professor Jonathan Rocha: da construção à farda policial"
+              loading="lazy"
+              className="mx-auto w-full max-w-xl rounded-2xl border border-primary/30 shadow-[var(--shadow-elev)]"
+            />
           </div>
         </div>
       </section>
