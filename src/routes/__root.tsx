@@ -100,11 +100,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
     scripts: [
-      { children: 'window.pixelId = "6824be690a5d57fc0d1b7f42";' },
       {
-        src: "https://cdn.utmify.com.br/scripts/pixel/pixel.js",
+        src: "https://utm.profjonathanrocha.com.br/tracker.js",
+        "data-api-url": "https://utm.profjonathanrocha.com.br",
+        "data-workspace-id": "cmuotqnzi0001zycztwrfcm3i",
+        "data-pixel-id": "378688221271403",
         async: true,
-        defer: true,
       },
     ],
   }),
